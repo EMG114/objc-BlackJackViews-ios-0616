@@ -2,6 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FISBlackjackGame.h">
+   </FileRef>
+   <FileRef
+      location = "group:FISBlackjackGame.m">
+   </FileRef>
+   <FileRef
+      location = "group:FISBlackjackPlayer.h">
+   </FileRef>
+   <FileRef
+      location = "group:FISBlackjackPlayer.m">
+   </FileRef>
+   <FileRef
+      location = "group:FISCard.h">
+   </FileRef>
+   <FileRef
+      location = "group:FISCard.m">
+   </FileRef>
+   <FileRef
+      location = "group:FISCardDeck.h">
+   </FileRef>
+   <FileRef
+      location = "group:FISCardDeck.m">
+   </FileRef>
+   <FileRef
+      location = "group:FISBlackjackViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:FISBlackjackViewController.m">
+   </FileRef>
+   <FileRef
       location = "group:objc-BlackJackViews.xcodeproj">
    </FileRef>
    <FileRef

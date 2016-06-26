@@ -35,7 +35,7 @@ describe(@"FISBlackjackViewController", ^{
         
         [UIApplication sharedApplication].keyWindow.rootViewController = blackjackVC;
     });
-    
+
     describe(@"initial view", ^{
         it(@"should hide all of the house's card views", ^{
             [tester waitForAbsenceOfViewWithAccessibilityLabel:@"houseCard1"];
@@ -135,7 +135,7 @@ describe(@"FISBlackjackViewController", ^{
             
             [tester waitForViewWithAccessibilityLabel:@"playerCard3"];
         });
-        
+    
         it(@"should update the player's score label with the new score", ^{
             [tester tapViewWithAccessibilityLabel:@"deal"];
             
@@ -148,7 +148,7 @@ describe(@"FISBlackjackViewController", ^{
             UILabel *playerScore = (UILabel *)[tester waitForViewWithAccessibilityLabel:@"playerScore"];
             
             NSString *playerScoreString = [NSString stringWithFormat:@"%lu", blackjackVC.game.player.handscore];
-            
+        
             expect(playerScore.text).to.endWith(playerScoreString);
         });
     });
