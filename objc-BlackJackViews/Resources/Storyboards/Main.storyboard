@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sua-84-URc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sua-84-URc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Blackjack View Controller-->
@@ -30,6 +30,9 @@
                                 <state key="normal" title="Deal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dealButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="Jnf-5S-0mc"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXk-KS-sws" userLabel="horizontalBar">
                                 <rect key="frame" x="20" y="97" width="374" height="4"/>
@@ -153,6 +156,9 @@
                                 <state key="normal" title="Hit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="hitButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="lXb-rw-wCv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-D7-yWZ" userLabel="stay">
                                 <rect key="frame" x="334" y="420" width="60" height="60"/>
@@ -162,6 +168,9 @@
                                 <state key="normal" title="Stay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="stayButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="1GL-VN-QXi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv3-zq-Crv" userLabel="playerCard1">
                                 <rect key="frame" x="20" y="493" width="60" height="80"/>
@@ -233,6 +242,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="dealCard" destination="ah4-9X-lXP" id="FMi-mh-S0G"/>
+                        <outlet property="gameResult" destination="AFS-sU-bay" id="YUq-eH-CI7"/>
+                        <outlet property="hitPlayer" destination="Ra6-Lx-heH" id="3Ad-dG-tec"/>
+                        <outlet property="houseBlackjack" destination="o2I-uD-oQl" id="vR5-Cl-acO"/>
+                        <outlet property="houseBust" destination="pW6-R2-I3W" id="3Jv-zH-8No"/>
+                        <outlet property="houseCard1" destination="MB7-5b-QZM" id="m88-FQ-w1E"/>
+                        <outlet property="houseCard2" destination="urs-V1-hLW" id="xu4-7e-7co"/>
+                        <outlet property="houseCard3" destination="nXQ-iJ-OuQ" id="Z4V-6w-nZC"/>
+                        <outlet property="houseCard4" destination="fl4-1V-860" id="PQo-2J-lsz"/>
+                        <outlet property="houseCard5" destination="Ye3-Hg-JNH" id="z5m-Bo-1fp"/>
+                        <outlet property="houseLosses" destination="LgO-bp-yhQ" id="fQ4-fD-PxF"/>
+                        <outlet property="housePlayer" destination="6mf-pB-D2z" id="K41-CZ-Bmf"/>
+                        <outlet property="houseScore" destination="IIA-Ew-rRc" id="CSB-hY-hQt"/>
+                        <outlet property="houseStay" destination="bK6-Tk-d0e" id="ae5-Cu-esu"/>
+                        <outlet property="houseWins" destination="dJL-rq-1Zt" id="OhZ-8H-dOW"/>
+                        <outlet property="player" destination="yum-bz-Qhp" id="Oih-hH-FOH"/>
+                        <outlet property="playerBlackjack" destination="WgU-EH-8FL" id="Pro-gK-QtG"/>
+                        <outlet property="playerBust" destination="R89-KL-eMU" id="C10-3y-txH"/>
+                        <outlet property="playerCard1" destination="Yv3-zq-Crv" id="a0i-KU-J0a"/>
+                        <outlet property="playerCard2" destination="E5c-72-u9U" id="Db3-Qq-L9c"/>
+                        <outlet property="playerCard3" destination="kcx-GU-KeG" id="4DE-Wx-r0h"/>
+                        <outlet property="playerCard4" destination="utf-7Z-CIB" id="yCE-Ay-7II"/>
+                        <outlet property="playerCard5" destination="gCE-db-huL" id="6BT-HX-wfY"/>
+                        <outlet property="playerLosses" destination="BMg-Vn-GRn" id="zHK-kz-xqf"/>
+                        <outlet property="playerScore" destination="2LA-xK-NBK" id="MAH-XO-KG9"/>
+                        <outlet property="playerStay" destination="TmX-OF-3CS" id="uzw-dr-pTN"/>
+                        <outlet property="playerWins" destination="xqU-dA-iHc" id="voM-sv-VzV"/>
+                        <outlet property="stayPlayer" destination="dzP-D7-yWZ" id="Swe-I0-CWQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwO-ay-0xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
